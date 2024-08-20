@@ -34,9 +34,9 @@
         <div class="navbar">
             <a href="index.html" title="Acceuil - GlobeTravel" class="selected">Accueil</a>
             <!-- . et / pour naviguer dans la hierachie de façon local et non absolu. -->
-             <!-- Secondaire -->
+            <!-- Secondaire -->
             <div class="dropdown">
-                <button class="dropbtn">Secondaire</button>
+                <button class="dropbtn" >Secondaire</button>
                 <div class="dropdown-content">
                     <a href="jsp/layouts/viewResource.jsp?level=Secondaire&course=Sixieme">Sixième</a>
                     <a href="jsp/layouts/viewResource.jsp?level=Secondaire&course=Cinquieme">Cinquième</a>
@@ -45,7 +45,7 @@
                 </div>
             </div>
             
-                <!-- Lycée -->
+            <!-- Lycée -->
             <div class="dropdown">
                 <button class="dropbtn">Lycée</button>
                 <div class="dropdown-content">

@@ -19,6 +19,7 @@ header > p {
     margin-top: 10px;
 }
 
+
 /* La navigation */
 nav {
     position: -webkit-sticky;
@@ -37,12 +38,67 @@ nav {
     float: right;
 }
 
-.navbar>a {
+.navbar a, .navbar .dropbtn {
     padding: 16px 24px;
     display: inline-block;
     color: white;
+    text-decoration: none;
     transition: 0.2s all;
 }
+
+.navbar a:hover, .navbar .dropdown:hover .dropbtn {
+    background-color: #42aced;
+    color: whitesmoke;
+    transform: scale(1.2);
+}
+
+.navbar .selected {
+    background-color: #3994cc;
+}
+
+/* Dropdown styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: #303030;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #303030;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #42aced;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+
+
+
+
 
 
 
