@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="fr">
 
 <head>
@@ -16,7 +17,9 @@
     <link rel="shortcut icon" href="./images/home.ico" type="image/x-icon">
 </head>
 
+
 <body>
+
     <!--
     L'en-tête du site avec un titre et une description
     --->
@@ -40,6 +43,7 @@
             <a href="./coordonnees.html" title="Nos coordonées" class="navright">Coordonées</a>
         </div>
     </nav>
+</body>
 
     <!-- Le pied de page. -->
     <footer>
@@ -57,6 +61,7 @@
         <a href="./avis.html" class="liens" title="Votre avis">Votre avis</a>
         <a href="./coordonnees.html" class="liens" title="Nos coordonées">Nos coordonées</a>
     </footer>
+
 </body>
 
 </html>
