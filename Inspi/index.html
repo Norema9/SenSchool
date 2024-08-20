@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <!--
+    Initie l'encodage du site
+    - Initialise bien la page
+    - Titre de la page
+    - Relie la page html et css
+    - Ajoute une icon (sympathique) dans l'onglet (a côté du titre.)
+    -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>GlobeTravel - Acceuil</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="./images/home.ico" type="image/x-icon">
+</head>
+
+<body>
+    <!--
+    L'en-tête du site avec un titre et une description
+    --->
+    <header>
+        <h1>GlobeTravel</h1>
+        <p>Visiter le monde avec GlobeTravel</p>
+    </header>
+    <!-- La bar de navigation avec les différent liens du site, l'attribut title est un texte qui s'affiche à côté du pointeur souris lorsqu'on passe sur l'élément -->
+    <!-- On passe par une balise nav d'une part pour rendre plus lisible le code, d'autre part car au niveau du css, on avait un problème avec ceci : position : sticky-->
+    <!-- la class selected est pour afficher le lien en forme de bouton en bleu (pour dire que c'est sur cette page qu'on est) et navright pour le css avec float (pour les mettre à droite)-->
+    <nav>
+        <div class="navbar">
+            <a href="index.html" title="Acceuil - GlobeTravel" class="selected">Accueil</a>
+            <!-- . et / pour naviguer dans la hierachie de façon local et non absolu. -->
+            <a href="./pays/France.html" title="La France">France</a>
+            <a href="./pays/Senegal.html" title="Le Sénégal">Sénégal</a>
+            <a href="./pays/Chine.html" title="La Chine">Chine</a>
+            <a href="./pays/EtatsUnis.html" title=">Les Etats-Unis">Etats-unis</a>
+            <a href="./pays/Australie.html" title="L'Australie">Australie</a>
+            <a href="./avis.html" title="Votre avis" class="navright">Avis</a>
+            <a href="./coordonnees.html" title="Nos coordonées" class="navright">Coordonées</a>
+        </div>
+    </nav>
+
+    <!-- la balise main ici n'est là que par un soucis de lisibilité dans notre cas.-->
+    <main>
+        <!-- Cette div encadre tout le contenu, elle est présente pour le style-->
+        <div class="acceuilimg">
+            <h1 class="tete">🛫 On vous aide à trouver votre destanion ? 🛬</h1>
+            <a href="./secret.html" class="secret">On peut vous aidez ✅</a>
+            <!-- Cette div est pour la mise en page. On encadre la photo ainsi que le texte (+ lien).-->
+            <div class="boxnobg">
+                <!-- Pour mettre à gauche -->
+                <div class="left">
+                    <a href="https://pxhere.com/fr/photo/1422617"><img src="./images/paris.jpg" alt="France" title="Autheur : m1sty, licence : CC0"></a>
+                </div>
+                <!-- Pour mettre à droite-->
+                <div class="right">
+                    <h2 class="title">La France</h2>
+                    <p class="description">Quand vous étiez enfant et que votre maman vous demander qu'est-ce que vous voulez comme cadeau et que vous, vous lui répondez : "TOUT, -TOUT". Et bien on vous propose la <span class="pays">France</span>.<br>Vous souhaitez faire un séjour à la montagne, mais après aller à la plage, pour ensuite aller à Disneyland, pour continuer aller dans le plus beau chateau du monde, mais par la même occasion allez sur la plus belle rue du monde, pour enfin finir votre tounée avec l'histoire des deux geurres ? Et bien je ne changerai pas ma proposition, je vous conseille toujours la <span class="pays">France</span>.</p>
+                    <a href="./pays/France.html" class="liens" title="La France">➡️ Cliquez ici ⬅️</a>
+                </div>
+            </div>
+            <!-- Répétition pour faire du contenu en variant la place de l'image et le texte (droite et gauche)-->
+            <div class="boxnobg">
+                <div class="left">
+                    <h2 class="title">Le Sénégal</h2>
+                    <p class="description"></p>
+                    <a href="./pays/Senegal.html" class="liens" title="Le Sénégal">➡️ Cliquez ici ⬅️</a>
+                </div>
+                <div class="right">
+                    <a href="https://www.alibabuy.com/guide-touristique/senegal/saly.html"><img src="./images/senegal.jpeg" alt="senegal" title="Autheur : giuliano2022, licence : CC0"></a>
+                </div>
+            </div>
+            <!-- Encore -->
+            <div class="boxnobg">
+                <div class="left">
+                    <a href="https://commons.wikimedia.org/wiki/File:2010_CHINE_%284563387862%29.jpg"><img src="./images/murailleChine.jpg" alt="Chine" title="Autheur : thierrytutin, licence : CC BY 2.0 DEED"></a>
+                </div>
+                <div class="right">
+                    <h2 class="title">La Chine</h2>
+                    <p class="description">Vous n'êtes probablement pas un américain si vous souhaitez aller en Chine. Cepandent on peut tout de même vous aidez à choisir votre idéal lors de votre séjour en Chine.<br>Ce n'est pas un lieu qui manque de beau paysage, plusieurs destinations INCONTOURNABLE vous attendes !</p>
+                    <a href="./pays/Chine.html" class="liens" title="La Chine">➡️ Cliquez ici ⬅️</a>
+                </div>
+            </div>
+            <!-- Encore -->
+            <div class="boxnobg">
+                <div class="left">
+                    <h2 class="title">Les Etats-Unis</h2>
+                    <p class="description">RHAAAAAAAA FREEEDDDDDOOOOOMMMMMM HERE !<br>Ah, le rêve américain... J'ai pas besoin d'essayer de vous donner envie tellement ça à l'air trop bien. Franchement j'aimerai pouvoir vous accompagner dans ce voyage. Imaginer allez en <span class="pays">Californie</span> et aller à DisneyLand, vraiment un voyage magique ✨</p>
+                    <a href="./pays/EtatsUnis.html" class="liens" title="Les Etats-Unis">➡️ Cliquez ici ⬅️</a>
+                </div>
+                <div class="right">
+                    <a href=""><img src="./images/Statue_de_la_Liberté,_Soulac-sur-Mer.jpg" alt="Etats-Unis" title="Autheur : Florent Peylet, licence : CC BY-SA 4.0 DEED"></a>
+                </div>
+            </div>
+            <!-- Encore... -->
+            <div class="boxnobg">
+                <div class="left">
+                    <a href="https://www.flickr.com/photos/volvob12b/39044618592"><img src="./images/opera_de_sydney.jpg" alt="Australie" title="Autheur : Bernard Spragg, licence : CC0 1.0 DEED"></a>
+                </div>
+                <div class="right">
+                    <h2 class="title">L'Australie</h2>
+                    <p class="description">Sa serait moi, je n'irai pas 😖 Avec tout ce qui se passe là-bas, vraiment pas mon genre les grosses... GROSSES araignées, les serpents etc... Non vraiment je n'irai pas moi. Cependant il y a des kangourous et des koalas 🥰 ça peut être assez sympa tout de même.<br>Fin après c'est à vous de chosir.</p>
+                    <a href="./pays/Australie.html" class="liens" title="L'Australie">➡️ Cliquez ici ⬅️</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Le pied de page. -->
+    <footer>
+        <!-- On réutilise la même technique que précédement pour centrer et mettre à gauche et à droite. -->
+        <div class="boxnobg"> 
+            <div class="left">
+                <h3>GlobeTravel</h3>
+            </div>
+            <div class="right">
+                <p>Site créer par GUEYE serigne fallilou et LOUYOT Thibaut</p>
+            </div>
+        </div>
+        <hr>
+        <p class="boxnobg">Votre avis compte pour nous. Aidez nous à améliorer nos services en donnant votre avis.</p>
+        <a href="./avis.html" class="liens" title="Votre avis">Votre avis</a>
+        <a href="./coordonnees.html" class="liens" title="Nos coordonées">Nos coordonées</a>
+    </footer>
+</body>
+
+</html>
