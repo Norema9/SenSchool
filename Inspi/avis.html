@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Votre avis compte</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="./images/Lamp_News_logo.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <h1>GlobeTravel</h1>
+        <p>Visiter le monde avec GlobeTravel</p>
+    </header>
+    <nav>
+        <div class="navbar">
+            <a href="index.html" title="Acceuil - GlobeTravel">Accueil</a>
+            <a href="./pays/France.html" title="La France">France</a>
+            <a href="./pays/Senegal.html" title="Le Sénégal">Sénégal</a>
+            <a href="./pays/Chine.html" title="La Chine">Chine</a>
+            <a href="./pays/EtatsUnis.html" title=">Les Etats-Unis">Etats-unis</a>
+            <a href="./pays/Australie.html" title="L'Australie">Australie</a>
+            <a href="./avis.html" title="Votre avis" class="navright selected">Avis</a>
+            <a href="./coordonnees.html" title="Nos coordonées" class="navright">Coordonées</a>
+        </div>
+    </nav>
+    <main>
+        <div class="tete">
+            <h1>Votre Avis Compte</h1>
+            <p>Nous apprécions votre opinion. Partagez votre expérience avec nous!</p>
+        </div>
+        
+        <!-- Formulaire d'appréciation des visiteurs -->
+        <form action="#" method="post" class="avis-form">
+
+            <h1>Votre profil :</h1>
+
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" required>
+
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="telephone">Numéro de Téléphone :</label>
+            <input type="tel" id="tel" name="telephone" pattern="[0-9]{10}" placeholder="Format : 0123456789">
+
+            <label for="pays">Pays :</label>
+            <select id="pays" name="pays" required>
+                <option value="france">France</option>
+                <option value="senegal">Sénégal</option>
+                <option value="chine">Chine</option>
+                <option value="etatsUnis">États-Unis</option>
+                <option value="australie">Australie</option>
+                <option value="japon">Japon</option>
+                <option value="bresil">Brésil</option>
+                <option value="inde">Inde</option>
+                <option value="canada">Canada</option>
+            </select>
+
+            <h1>Votre avis :</h1>
+
+            <label for="avis">Votre Avis :</label>
+            <textarea id="avis" name="avis" rows="4" required></textarea>
+
+            <label for="note">Note (de 0 à 20) :</label>
+            <input type="number" id="note" name="note" min="0" max="20" required>
+
+            <p>Évaluez les aspects suivants :</p>
+
+            <label for="userFriendly">Le site est-il user-friendly ?</label>
+            <select id="userFriendly" name="userFriendly" required>
+                <option value="oui">Oui</option>
+                <option value="non">Non</option>
+            </select>
+
+            <label for="choixCouleurs">Le choix de couleurs est-il satisfaisant ?</label>
+            <select id="choixCouleurs" name="choixCouleurs" required>
+                <option value="oui">Oui</option>
+                <option value="non">Non</option>
+            </select>
+
+            <label for="disposition">La disposition du site est-elle satisfaisante ?</label>
+            <select id="disposition" name="disposition" required>
+                <option value="oui">Oui</option>
+                <option value="non">Non</option>
+            </select>
+
+            <label for="correspondancePays">Les pays présentés correspondent-ils à vos attentes ?</label>
+            <div>
+                <input type="radio" id="nulP" name="correspondancePays" value="nul" required>
+                <label for="nul">Nul</label>
+
+                <input type="radio" id="bofP" name="correspondancePays" value="bof">
+                <label for="bof">Bof</label>
+
+                <input type="radio" id="bienP" name="correspondancePays" value="bien">
+                <label for="bien">Bien</label>
+
+                <input type="radio" id="tresBienP" name="correspondancePays" value="tresBien">
+                <label for="tresBien">Très Bien</label>
+            </div>
+
+            <label for="correspondanceLieux">Les lieux présenté correspondent-ils à vos attentes ?</label>
+            <div>
+                <input type="radio" id="nulL" name="correspondanceLieux" value="nul" required>
+                <label for="nul">Nul</label>
+
+                <input type="radio" id="bofL" name="correspondanceLieux" value="bof">
+                <label for="bof">Bof</label>
+
+                <input type="radio" id="bienL" name="correspondanceLieux" value="bien">
+                <label for="bien">Bien</label>
+
+                <input type="radio" id="tresBienL" name="correspondanceLieux" value="tresBien">
+                <label for="tresBien">Très Bien</label>
+            </div>
+
+            <label for="correspondanceInfosPays">Les informations concernant les pays correspondent-ils à vos attentes ?</label>
+            <div>
+                <input type="radio" id="nulIP" name="correspondanceInfosPays" value="nul" required>
+                <label for="nul">Nul</label>
+
+                <input type="radio" id="bofIP" name="correspondanceInfosPays" value="bof">
+                <label for="bof">Bof</label>
+
+                <input type="radio" id="bienIP" name="correspondanceInfosPays" value="bien">
+                <label for="bien">Bien</label>
+
+                <input type="radio" id="tresBienIP" name="correspondanceInfosPays" value="tresBien">
+                <label for="tresBien">Très Bien</label>
+            </div>
+
+            <h3>Merci</h3>
+
+            <input type="reset" value="Réinitialiser" class="buttonReset">
+
+            <button type="submit">Envoyer</button>
+        </form>
+    </main>
+    <footer>
+        <div class="boxnobg"> 
+            <div class="left">
+                <h3>GlobeTravel</h3>
+            </div>
+            <div class="right">
+                <p>Site créer par GUEYE serigne fallilou et LOUYOT Thibaut</p>
+            </div>
+        </div>
+        <p class="boxnobg">Votre avis compte pour nous. Aidez nous à améliorer nos services en donnant votre avis.</p>
+        <a href="./avis.html" class="liens" title="Votre avis">Votre avis</a>
+        <a href="./coordonnees.html" class="liens" title="Nos coordonées">Nos coordonées</a>
+    </footer>
+</body>
+
+</html>
