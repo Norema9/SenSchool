@@ -13,7 +13,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>GlobeTravel - Acceuil</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/index-style.css" rel="stylesheet" type="text/css" />
     <link rel="shortcut icon" href="./images/home.ico" type="image/x-icon">
 </head>
 
@@ -34,11 +34,28 @@
         <div class="navbar">
             <a href="index.html" title="Acceuil - GlobeTravel" class="selected">Accueil</a>
             <!-- . et / pour naviguer dans la hierachie de façon local et non absolu. -->
-            <a href="./pays/France.html" title="La France">France</a>
-            <a href="./pays/Senegal.html" title="Le Sénégal">Sénégal</a>
-            <a href="./pays/Chine.html" title="La Chine">Chine</a>
-            <a href="./pays/EtatsUnis.html" title=">Les Etats-Unis">Etats-unis</a>
-            <a href="./pays/Australie.html" title="L'Australie">Australie</a>
+             <!-- Secondaire -->
+            <div class="dropdown">
+                <button class="dropbtn">Secondaire</button>
+                <div class="dropdown-content">
+                    <a href="jsp/layouts/viewResource.jsp?level=Secondaire&course=Sixieme">Sixième</a>
+                    <a href="jsp/layouts/viewResource.jsp?level=Secondaire&course=Cinquieme">Cinquième</a>
+                    <a href="jsp/layouts/viewResource.jsp?level=Secondaire&course=Quatrieme">Quatrième</a>
+                    <a href="jsp/layouts/viewResource.jsp?level=Secondaire&course=Troisieme">Troisième</a>
+                </div>
+            </div>
+            
+                <!-- Lycée -->
+            <div class="dropdown">
+                <button class="dropbtn">Lycée</button>
+                <div class="dropdown-content">
+                    <a href="jsp/layouts/viewResource.jsp?level=Lycee&course=Seconde">Seconde</a>
+                    <a href="jsp/layouts/viewResource.jsp?level=Lycee&course=Premiere">Première</a>
+                    <a href="jsp/layouts/viewResource.jsp?level=Lycee&course=Terminale">Terminale</a>
+                </div>
+            </div>
+
+
             <a href="./avis.html" title="Votre avis" class="navright">Avis</a>
             <a href="./coordonnees.html" title="Nos coordonées" class="navright">Coordonées</a>
         </div>
