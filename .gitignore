@@ -1,1 +1,4 @@
-ECHO is off.
+Zinspi/
+*.gitignore
+*.env
+*.htaccess
