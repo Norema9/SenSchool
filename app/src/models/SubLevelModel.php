@@ -4,7 +4,7 @@ namespace App\Model;
 
 class LevelModel
 {
-    public function getLevels()
+    public function getSubLevels()
     {
         // Code to fetch levels and years from database
         // Example:

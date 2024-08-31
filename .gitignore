@@ -2,3 +2,5 @@ Zinspi/
 *.gitignore
 *.env
 *.htaccess
+
+/vendor/

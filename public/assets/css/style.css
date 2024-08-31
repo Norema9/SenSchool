@@ -48,15 +48,10 @@ nav {
 }  
 
     /* Handling dropdown content */
-
 .dropdown_button {
-    display: block; /* Make it a block-level element to take full width */
-    width: 100%;
     color: white;
-    /* padding: 16px; */
-    background-color: #333;
+    background-color: transparent;
     border: none;
-    cursor: pointer;
 }
 
 .dropdown_content {
@@ -84,7 +79,7 @@ nav {
     display: block;
 }
 
-.navbar a:hover, .navbar .dropdown:hover .dropdown_button {
+.navbar a:hover, .navbar .dropdown:hover {
     background-color: #42aced;
     color: whitesmoke;
     transform: scale(1.1);
@@ -96,19 +91,86 @@ nav {
 
 
 
-/* Style of the footer */
+/* The footer */
 footer {
-    background-color: #333;
-    color: white;
+    background-color: #303030;
+    padding-top: 2.5%;
+    padding-bottom: 0.5%;
     text-align: center;
-    padding: 1rem;
+    color: white;
+}
+
+footer .boxnobg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
 
 
+/* Réinitialise le style après pour éviter tout problème*/
+footer .boxnobg::after {
+    all: unset;
+}
+
+footer .boxnobg > div > h1 {
+    color: white;
+    text-shadow: 0 0 5px #000000, 0 0 10px #111111;
+}
+
+footer .right {
+    flex: 1;
+    text-align: center;
+    padding: 15px;
+}
+
+footer .left {
+    flex: 1;
+    text-align: center;
+    padding: 15px;
+}
+
+/* General elements */
+.liens {
+    display: inline-block;
+    margin-top: 20px; /* Espace entre le paragraphe et le lien, ajustez selon vos besoins */
+    border: solid 1px black;
+    border-radius: 30px;
+    padding: 8px 24px;
+    background-color: whitesmoke;
+    transition: 0.2s all;
+    color: black;
+    text-decoration: none;
+}
+
+a.liens:hover {
+    background-color: #42aced;
+    color: whitesmoke;
+    transform: scale(1.2);
+    border-color: rgba(0, 0, 0, 0);
+}
+
+
+/* To be adapted */
 form {
     max-width: 600px;
     margin: 20px auto;
     padding: 20px;
     background: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* repris de w3school et légérement ajusté pour notre site*/
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 835px) {
+    .navbar>a, .navbar .dropdown {
+      float: none;
+      width: 100%;
+      text-align: center;
+    }
+    nav {
+        position: static;
+    }
 }
